@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML 3</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#tabs" ).tabs();
+
+  } );
+  </script>
+        <style>
+            body {background-color: #626aa3;}
+            p {color: #ffc862;}
+            table, th,td {border: 1px solid;
+            border-collapse: collapse; border-color: #f16bac;}
+            .img-center {text-align: center;}
+            #listofalbums {background-color: #c097e6;
+            margin-right: 490px;}
+            li {color: #ffc862;}
+            h1{ font-family: 'agbalumo' , cursive;  }
+            h2{ font-family: 'comfortaa' , cursive;  }
+            * { box-sizing: border-box;}
+            
+            .tabs {
+              width: 50%;
+            }
+            .container{
+	width:1020px;
+	margin:0 auto;
+	background-color: #C9DDF3;
+}
+
+            .flex-container  {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #c097e6;
+  width: 50%
+}
+
+.flex-container > div {
+  background-color: #fefbdc;
+  width: 70px;
+  margin: 10px;
+  text-align: center;
+  line-height: 19px;
+  font-size: 14px;
+}
+
+.flex-nav{
+	flex-grow:2;
+	flex-flow: column wrap;
+  align-content: space-between;
+ display: flex;
+ height: 95px;
+  width: 50%;
+  background-color: #c097e6;
+}
+
+
+.flex-nav > div {
+  background-color: #ffc862;
+  width: 100px;
+  margin: 1px;
+  text-align: left;
+  line-height: 15px;
+  font-size: 14px;
+}
+
+input[type=text], select, textarea {
+  width: 50%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #c097e6;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+
+}
+
+input[type=submit]:hover {
+  background-color: #c097e6;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 10%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 80%;
+    margin-top: 0;
+  }
+}
+            
+            
+        </style>
+    </head>
+    <body>
+        <h1 style="text-align:center;"><span style="background-color:#dc3f8b;">My Favorite Artist</span></h1>
+        <h2 style="text-align:center;">Kid Cudi</h2>
+        <div class="img-center">
+        <img src="images copy/z5TRmx4WQB9Ge1WQa6VdxBKnwmC.jpeg" alt="image of Kid Cudi">
+        </div>
+        <p><b>Kid Cudi</b> has been my favorite artist for over 10 years, he puts so much creativity into all of his projects making him an all around talented musician and creative. </p>
+        <p title="suggestions for you to listen to">On this website I'll be introducing you to all of his <i>albums</i> and ranking my favorite albums.</p>
+        <h2><span style="background-color: #7b27c9">More Artist Information</span></h2>
+        <p>You can learn more about Kid Cudi's background and artist journey <a style="color:#fb7c1c" href="https://en.wikipedia.org/wiki/Kid_Cudi">here</a></p>
+        <br>
+        <H2><span style="background-color: #b144d2;">Albums</span></H2>
+        
+        
+       
+       
+        
+        
+        <table style="width: 60%; border: thin solid;">
+            <tr align="left">
+                <th>Album Name</th>
+                <th># of Songs</th>
+                <th>Release Date</th>
+            </tr>
+            <tr>
+                <td>Man On The Moon: End of Day</td>
+                <td>18
+                <td>Jan 1, 2009</td>
+            </tr>
+            <tr>
+                <td>Man On The Moon II</td>
+                <td>17
+                <td>Nov 9, 2010</td>
+                </td>
+            </tr>
+            <tr>
+                <td>Indicud</td>
+                <td>18</td>
+                <td>April 12, 2013</td>
+            </tr>
+            <tr>
+                <td>Satellite Flight</td>
+                <td>10</td>
+                <td>Feb 25, 2014</td>
+            </tr>
+            <tr>
+                <td>Speedin' Bullet 2 Heaven</td>
+                <td>26</td>
+                <td>Dec 4, 2015</td>
+            </tr>
+            <tr>
+                <td>Passion, Pain & Demon Slayin'</td>
+                <td>19</td>
+                <td>Dec 16, 2016</td>
+            </tr>
+            <tr>
+                <td>Man On The Moon III</td>
+                <td>18</td>
+                <td>Dec 11, 2020</td>
+            </tr>
+            <tr>
+                <td><a style="color:#fb7c1c" href="entergalactic.html">Entergalactic</a></td>
+                <td>15</td>
+                <td>Sept 30, 2022</td>
+            </tr>
+        </table>
+        <br>
+        <h2><span id="listofalbums">Album Ranking </span></h2>
+        <div style="background-color:#7b27c9" id="tabs">
+          <ul>
+            <li><a href="#tabs-1">My Top Three</a></li>
+            <li><a href="#tabs-2">Album Covers</a></li>
+            
+          </ul>
+          <div style="background-color:#c097e6" id="tabs-1">
+            <p>Here I rank my top three albums by Kid Cudi. This was honestly hard to choose but I was able to narrow it down.</p>
+          </div>
+          <div style="background-color:#c097e6" id="tabs-2">
+            <p>These are each of the album covers in order.</p>
+            <br>
+            <img src="images copy/tumblr_pfyx79ZKif1rs3nja_og_1280.jpeg" alt="image of album cover">
+             <img src="images copy/Kid Cudii- Entergalactic.jpeg-2 copy.webp" alt="image of album cover">
+             <img src="images copy/LDK4893__72351.jpeg" alt="image of album cover">
+          </div>
+         
+        </div>
+         
+      
+     
+     
+        <h3><span style="background-color: #ffc862;">My Top Three</span></h3>
+        <div class="flex-container" >
+          <div style="flex-grow: 1">Album Name</div>
+          <div style="flex-grow: 1" >Release Date</div>  
+        </div>
+
+        <div class="flex-nav">
+          <div style="flex-grow: 1"> 1) Passion, Pain & Demon Slayin'</div>
+          <div >2) Entergalactic</div>
+          <div style="align-self: right" >3) Man On The Moon: End of Da</div> 
+          <div>Dec 16, 2016</div>
+          <div>Sept 30, 2022</div>
+          <div>Jan 1, 2009</div>
+         </div>
+        
+        
+             <br>
+             <h2><span style="background-color:#7b27c9;"> Share With Me </span></h2>
+             <p>I want to hear from you. Tell me what your favorite Kid Cudi album is. 
+                <br>You can see the choices from the album list above.</p>
+             <form action="/action_page.php">
+                <div class="row">
+                  <div class="col-25">
+                    <label for="first name">First Name</label>
+                  </div>
+                  <div class="col-75">
+                    <input type="text" id="first name" name="firstname" placeholder="Your name..">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-25">
+                    <label for="Feeling">Pick a Feeling</label>
+                  </div>
+                  <div class="col-75">
+                    <select id="Feeling" name="Feeling" size="3" multiple>
+                      <option value="Easiest Decison Ever">Easiest Decison Ever</option>
+                      <option value="Sooo Hard to Choose">Sooo Hard to Choose</option>
+                      <option value="Not A Fan so I Picked Whatever">Not A Fan so I Picked Whatever</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-25">
+                    <label for="Album">Album Choice</label>
+                  </div>
+                  <div class="col-75">
+                    <textarea id="Album" name="Album" placeholder="Write Your Fav Album Here.." style="height:200px"></textarea>
+                  </div>
+                </div>
+                <br>
+                <div class="row">
+                  <input type="submit" value="Submit"> 
+                </div>
+                </form>
+        
+    </body>
+</html>
